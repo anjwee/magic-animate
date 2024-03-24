@@ -1,0 +1,155 @@
+name: manimate
+version: 1.0.0  # You can set the version based on your project
+
+# Add a description for your application
+description: A Serverless Devs application for video animation
+
+# Define Python dependencies
+dependencies:
+  python:
+    - absl-py
+    - accelerate
+    - aiofiles
+    - aiohttp
+    - aiosignal
+    - altair
+    - annotated-types
+    - antlr4-python3-runtime
+    - anyio
+    - async-timeout
+    - attrs
+    - backcall
+    - backports
+    - backports.functools_lru_cache
+    - cachetools
+    - certifi
+    - charset-normalizer
+    - click
+    - comm
+    - contourpy
+    - cycler
+    - datasets
+    - decorator
+    - dill
+    - einops
+    - entrypoints
+    - executing
+    - ffmpy
+    - filelock
+    - fonttools
+    - frozenlist
+    - fsspec
+    - google-auth
+    - google-auth-oauthlib
+    - gradio
+    - gradio-client
+    - grpcio
+    - h11
+    - httpcore
+    - httpx
+    - huggingface-hub
+    - idna
+    - imageio
+    - imageio-ffmpeg
+    - importlib-metadata
+    - importlib-resources
+    - ipykernel
+    - ipython
+    - jedi
+    - jinja2
+    - joblib
+    - jsonschema
+    - jsonschema-specifications
+    - jupyter_client
+    - jupyter_core
+    - kiwisolver
+    - lightning-utilities
+    - lit
+    - markdown
+    - markupsafe
+    - matplotlib
+    - mpmath
+    - multidict
+    - multiprocess
+    - networkx
+    - nest-asyncio
+    - numpy
+    - oauthlib
+    - omegaconf
+    - opencv-python
+    - openssl
+    - orjson
+    - packaging
+    - pandas
+    - parso
+    - pexpect
+    - pickleshare
+    - pillow
+    - pip
+    - prompt-toolkit
+    - ptyprocess
+    - pure_eval
+    - pyarrow
+    - pyasn1
+    - pyasn1-modules
+    - pydantic
+    - pydantic-core
+    - pydub
+    - pygments
+    - pyparsing
+    - python-dateutil
+    - python-multipart
+    - pytorch-lightning
+    - pytz
+    - pyyaml
+    - referencing
+    - regex
+    - requests
+    - requests-oauthlib
+    - rpds-py
+    - rsa
+    - safetensors
+    - semantic-version
+    - scikit-image
+    - scipy
+    - sniffio
+    - sqlite
+    - stack_data
+    - starlette
+    - sympy
+    - tensorboard
+    - tensorboard-data-server
+    - timm
+    - tk
+    - tokenizers
+    - toolz
+    - torch
+    - torchmetrics
+    - torchvision
+    - tqdm
+    - transformers
+    - triton
+    - typing_extensions
+    - tzdata
+    - urllib3
+    - uvicorn
+    - wcwidth
+    - websockets
+    - werkzeug
+    - wheel
+    - xxhash
+    - yarl
+    - zeromq
+    - zipp
+    - xformers
+    - diffusers
+
+# You may need to adjust runtime based on your application's needs
+services:
+  scf:
+    functions:
+      # Replace with your function name and handler
+      your_function_name:
+        handler: your_handler_file.your_handler_function
+        runtime: Python3.8  # You can adjust the runtime based on your needs
+        timeout: 300  # Adjust timeout based on your function execution time
