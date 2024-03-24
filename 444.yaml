@@ -1,0 +1,18 @@
+edition: 1.0.0
+name: magic-animate
+access: "default"
+
+services:
+  magic-animate:
+    component: devsapp/fc
+    props:
+      region: cn-hangzhou
+      service:
+        name: magic-animate
+        description: Magic Animate Service
+      function:
+        name: magic-animate-function
+        description: Function for Magic Animate
+        runtime: python3.8
+        codeUri: ./
+        handler: main
